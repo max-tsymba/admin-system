@@ -6,6 +6,7 @@
 
 # Node.js Tools for Visual Studio
 node_modules/
+*lock.json
 
 # VS Code files for those working on multiple tools
 .vscode/*
@@ -18,7 +19,7 @@ node_modules/
 # Local History for Visual Studio Code
 .history/
 
-# Sass Files
+# Sass & Css Files
 .sass-cache/
 *.css.map
 *.sass.map

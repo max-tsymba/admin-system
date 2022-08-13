@@ -1,0 +1,23 @@
+/* Base Template */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-style: normal;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.3s;
+  }
+}
+
+img {
+  max-width: 100%;
+}
