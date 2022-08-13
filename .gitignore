@@ -1,4 +1,28 @@
+# Files built by Visual Studio
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+
+# Node.js Tools for Visual Studio
+node_modules/
+
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Sass Files
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+
+# Private files
+.env
