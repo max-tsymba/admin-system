@@ -1,0 +1,29 @@
+// Colors classes
+.cl-white {
+  background-color: $white;
+}
+
+.cl-red-text {
+  color: $red;
+}
+
+.cl-grey {
+  background-color: $grey;
+}
+
+.cl-gradient {
+  background-image: $main-gradient;
+}
+
+.h20 {
+  height: 20px;
+}
+
+.cfs-1 {
+  font-size: 0.7rem;
+}
+
+// Elements
+.custom-dropdown a {
+  color: $text;
+}
