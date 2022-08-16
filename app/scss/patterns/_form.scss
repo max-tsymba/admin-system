@@ -7,7 +7,19 @@ $formwidth: 450px;
   cursor: pointer;
 }
 
+.c-form-title {
+  color: $text !important;
+}
+
 .c-form-wrapper {
   width: $formwidth;
   max-width: $fullwidth;
+}
+
+.c-btn {
+  display: block !important;
+  padding: 0.85rem 0.5rem !important;
+  border-radius: 0.5rem;
+  color: $white;
+  background-image: linear-gradient(to right, #39a8ca 0%, #3cba92 100%);
 }

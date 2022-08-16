@@ -1,0 +1,15 @@
+/* Sidebar */
+
+.c-sidebar-wrapper {
+  min-height: calc(100vh - 72px);
+}
+
+.c-sidebar {
+  background-image: $main-gradient !important;
+  box-shadow: $dark-shadow !important;
+  color: $white !important;
+
+  a {
+    color: $white !important;
+  }
+}
