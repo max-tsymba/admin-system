@@ -1,0 +1,13 @@
+$fullwidth: 100%;
+$formwidth: 450px;
+
+/* Auth Form */
+.form-check-input {
+  margin-top: 0.1em;
+  cursor: pointer;
+}
+
+.c-form-wrapper {
+  width: $formwidth;
+  max-width: $fullwidth;
+}
