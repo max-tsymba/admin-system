@@ -2,7 +2,7 @@
 $main: #f5f6fa;
 $text: #313131;
 $white: #fefefe;
-$red: #f94449;
+$red: #ff8d72;
 $grey: #d0d1d3;
 $green: #3cba92;
 
@@ -11,3 +11,4 @@ $dark-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
 
 /* Gradients */
 $main-gradient: linear-gradient(to top, #39a8ca 0%, #3cba92 100%);
+$main-gradient-right: linear-gradient(to right, #39a8ca 0%, #3cba92 100%);

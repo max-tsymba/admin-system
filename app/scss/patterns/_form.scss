@@ -1,6 +1,8 @@
 $fullwidth: 100%;
 $formwidth: 450px;
 
+$r-semihalf: 0.5rem;
+
 /* Auth Form */
 .form-check-input {
   margin-top: 0.1em;
@@ -19,7 +21,17 @@ $formwidth: 450px;
 .c-btn {
   display: block !important;
   padding: 0.85rem 0.5rem !important;
-  border-radius: 0.5rem;
+  border-radius: $r-semihalf;
   color: $white;
-  background-image: linear-gradient(to right, #39a8ca 0%, #3cba92 100%);
+  background-image: $main-gradient-right;
+}
+
+.c-helper-text {
+  color: $red;
+  font-size: 0.8rem;
+  padding-top: 0.4rem;
+}
+
+._error {
+  border-color: $red;
 }
