@@ -1,0 +1,32 @@
+/* Hamburger Button */
+.c-hamburger-btn {
+  width: 25px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c-hamburger-btn span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: $text;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+}
+
+.c-hamburger-btn span {
+  &:nth-child(1) {
+    top: 0px;
+  }
+
+  &:nth-child(2) {
+    top: 6px;
+  }
+
+  &:nth-child(3) {
+    top: 12px;
+  }
+}

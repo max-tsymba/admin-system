@@ -19,35 +19,62 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="container-fluid">
-        <div class="row d-flex justify-content-between px-4 py-3">
+        <div class="row d-flex justify-content-between py-3 px-4">
           <div class="col d-flex align-items-center">
-            <h5 class="mb-0 fw-normal">Admin Panel</h5>
+            <div class="c-hamburger-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <a class="c-header-title mx-3" href="/">Admin Panel</a>
           </div>
 
           <div class="col d-flex align-items-center justify-content-end">
-            <div
-              class="d-flex flex-row-reverse align-items-center text-decoration-none gap-2"
-            >
-              <img
-                src="./img/icons/avatar.png"
-                alt="hugenerd"
-                width="40"
-                height="40"
-                class="rounded-circle"
-              />
-              <div class="d-flex flex-column cfs-1">
-                <span class="d-none d-sm-inline mx-1"
-                  >jotarolovesdolphin.gmail.com</span
-                >
-                <span class="d-none d-sm-inline mx-1">admin</span>
-              </div>
+            <div class="dropdown">
+              <a
+                class="d-flex align-items-center text-decoration-none dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="rounded-circle"
+                  src="./img/icons/user-avatar.png"
+                  alt="avatar"
+                  width="50"
+                  height="50"
+                />
+              </a>
+
+              <ul class="c-dropdown-menu dropdown-menu shadow">
+                <li>
+                  <div class="p-3">
+                    <h6 class="c-dropdown-email">aaron@example.com</h6>
+                    <p class="c-dropdown-status">Moderator</p>
+                  </div>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a
+                    class="c-dropdown-link dropdown-item py-2"
+                    href="login.html"
+                  >
+                    Выйти
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <!-- End Header -->
 
     <!-- Main -->
     <main class="main">

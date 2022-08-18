@@ -1,0 +1,44 @@
+$dropdown-width: 200px;
+
+$fs-13: 0.85rem;
+
+// #text
+.c-dropdown-email {
+  font-size: $fs-13;
+}
+
+.c-dropdown-status {
+  color: $grey;
+  font-size: $fs-13;
+  margin: 0;
+}
+
+.c-dropdown-link {
+  font-size: $fs-13;
+  font-weight: 500;
+}
+
+.c-header-title {
+  color: $text;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $text;
+  }
+}
+
+// #menu
+.c-dropdown-menu {
+  width: $dropdown-width;
+  border-radius: 0;
+  border: none;
+}
+
+// #button
+.dropdown-toggle {
+  color: $text;
+
+  &:hover {
+    color: $text;
+  }
+}

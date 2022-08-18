@@ -8,7 +8,10 @@
 @import './modules/media';
 
 /* Patterns */
+@import './patterns/header';
+@import './patterns/sidebar';
 @import './patterns/classes';
 @import './patterns/form';
-@import './patterns/sidebar';
+@import './patterns/hamburger';
+
 /* Sections */
