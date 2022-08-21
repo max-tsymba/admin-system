@@ -1,3 +1,5 @@
+$fs-13: 0.85rem;
+
 /* Sidebar */
 .c-sidebar-wrapper {
   min-height: calc(100vh - 88px);
@@ -7,8 +9,30 @@
   background-image: $main-gradient !important;
   box-shadow: $dark-shadow !important;
   color: $white !important;
+  font-size: $fs-13 !important;
 
-  a {
+  a,
+  button {
     color: $white !important;
+    font-size: $fs-13 !important;
+    font-weight: 500;
+    transition: all 0.3s !important;
+  }
+
+  .accordion-button::after {
+    background-image: url('../../img/icons/chevron.png');
+  }
+}
+
+.accordion-header,
+.accordion-body {
+  cursor: pointer;
+  transition: all 0.3s !important;
+}
+
+.accordion-body,
+.accordion-header {
+  &:hover {
+    background-color: rgba($white, 0.2) !important;
   }
 }

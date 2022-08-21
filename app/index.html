@@ -66,106 +66,146 @@
     <main class="main">
       <div class="container-fluid">
         <div class="row flex-nowrap">
-          <div class="c-sidebar-wrapper col-auto col-md-3 col-xl-2 px-sm-2 px-0 p-lg-3 custom-dropdown pt-lg-0">
-            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 h-100 c-sidebar rounded-2">
-              <div class="pt-3 pb-2"></div>
-              <hr />
+          <div class="c-sidebar-wrapper col-auto col-md-3 col-xl-2 px-sm-2 px-0 p-lg-3 pt-lg-0">
+            <!-- navigation -->
+            <nav class="c-sidebar d-flex flex-column align-items-center align-items-sm-start px-3 py-3 h-100 rounded-2">
+              <p class="mb-3 px-3 py-2 w-100 text-uppercase fw-bold">Меню</p>
 
-              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                <li>
-                  <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-speedometer2"></i>
-                    <span class="ms-1 d-none d-sm-inline">Новости</span>
-                  </a>
-                  <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                    <li class="w-100">
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Новости и статьи</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Авторы новостей</span>
-                      </a>
-                    </li>
-                  </ul>
+              <ul class="accordion w-100 list-unstyled" id="accordionPanelsStayOpenExample">
+                <li class="c-accordion-item accordion-item bg-transparent border-0">
+                  <div class="accordion-header d-flex gap-3 align-items-center px-3 rounded-2">
+                    <img src="./img/icons/dashboard.png" width="25" height="22" alt="" />
+                    <button
+                      class="accordion-button bg-transparent border-0 shadow-none px-0"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navigationOne"
+                      aria-expanded="true"
+                      aria-controls="navigationOne"
+                    >
+                      Новости
+                    </button>
+                  </div>
+
+                  <div id="navigationOne" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Новости и статьи</a>
+                    </div>
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Авторы новостей</a>
+                    </div>
+                  </div>
                 </li>
 
-                <li>
-                  <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-speedometer2"></i>
-                    <span class="ms-1 d-none d-sm-inline">Категории</span>
-                  </a>
-                  <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                    <li class="w-100">
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Все категории</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Каталог компаний - категории</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Каталог компаний - компании</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Объявления</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Объявления - категории</span>
-                      </a>
-                    </li>
-                  </ul>
+                <li class="c-accordion-item bg-transparent border-0">
+                  <div class="accordion-body p-0 my-1 rounded-2 align-items-center">
+                    <a class="p-3 d-inline-block w-100 d-flex gap-3" href="#">
+                      <img src="./img/icons/dashboard.png" width="22" height="20" alt="" />
+                      <span>Категории</span></a
+                    >
+                  </div>
                 </li>
 
-                <li>
-                  <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-speedometer2"></i>
-                    <span class="ms-1 d-none d-sm-inline">Пользователи</span>
-                  </a>
+                <li class="c-accordion-item accordion-item bg-transparent border-0">
+                  <div class="accordion-header d-flex gap-3 align-items-center px-3 rounded-2">
+                    <img src="./img/icons/dashboard.png" width="25" height="22" alt="" />
+                    <button
+                      class="accordion-button bg-transparent border-0 shadow-none px-0"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navigationTwo"
+                      aria-expanded="true"
+                      aria-controls="navigationTwo"
+                    >
+                      Каталог компаний
+                    </button>
+                  </div>
+
+                  <div id="navigationTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Категории</a>
+                    </div>
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Компании</a>
+                    </div>
+                  </div>
                 </li>
 
-                <li>
-                  <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-speedometer2"></i>
-                    <span class="ms-1 d-none d-sm-inline">Баннеры</span>
-                  </a>
+                <li class="c-accordion-item bg-transparent border-0">
+                  <div class="accordion-body p-0 my-1 rounded-2 align-items-center">
+                    <a class="p-3 d-inline-block w-100 d-flex gap-3" href="#">
+                      <img src="./img/icons/dashboard.png" width="22" height="20" alt="" />
+                      <span>Пользователи</span></a
+                    >
+                  </div>
                 </li>
 
-                <li>
-                  <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-speedometer2"></i>
-                    <span class="ms-1 d-none d-sm-inline">Афиша</span>
-                  </a>
-                  <ul class="collapse show nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                    <li class="w-100">
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Вся Афиша</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Категории Афиши</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-link px-0">
-                        <span class="d-none d-sm-inline">Места проведения Афиши</span>
-                      </a>
-                    </li>
-                  </ul>
+                <li class="c-accordion-item accordion-item bg-transparent border-0">
+                  <div class="accordion-header d-flex gap-3 align-items-center px-3 rounded-2">
+                    <img src="./img/icons/dashboard.png" width="25" height="22" alt="" />
+                    <button
+                      class="accordion-button bg-transparent border-0 shadow-none px-0"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navigationThree"
+                      aria-expanded="true"
+                      aria-controls="navigationThree"
+                    >
+                      Объявления
+                    </button>
+                  </div>
+
+                  <div id="navigationThree" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Все объявления</a>
+                    </div>
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Категории</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="c-accordion-item bg-transparent border-0">
+                  <div class="accordion-body p-0 my-1 rounded-2 align-items-center">
+                    <a class="p-3 d-inline-block w-100 d-flex gap-3" href="#">
+                      <img src="./img/icons/dashboard.png" width="22" height="20" alt="" />
+                      <span>Баннеры</span></a
+                    >
+                  </div>
+                </li>
+
+                <li class="c-accordion-item accordion-item bg-transparent border-0">
+                  <div class="accordion-header d-flex gap-3 align-items-center px-3 rounded-2">
+                    <img src="./img/icons/dashboard.png" width="25" height="22" alt="" />
+                    <button
+                      class="accordion-button bg-transparent border-0 shadow-none px-0"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navigationFour"
+                      aria-expanded="true"
+                      aria-controls="navigationFour"
+                    >
+                      Афиша
+                    </button>
+                  </div>
+
+                  <div id="navigationFour" class="accordion-collapse collapse">
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Вся афиша</a>
+                    </div>
+
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Категории</a>
+                    </div>
+
+                    <div class="accordion-body p-0 my-1 rounded-2">
+                      <a class="p-3 d-inline-block w-100" href="#">Места проведения</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
-              <hr />
-              <div class="pb-3"><a href="#">Выйти</a></div>
-            </div>
+            </nav>
+            <!-- End navigation -->
           </div>
 
           <div class="col py-3">Content area...</div>
