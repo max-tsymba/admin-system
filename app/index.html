@@ -66,7 +66,8 @@
     <main class="main">
       <div class="container-fluid">
         <div class="row flex-nowrap">
-          <div class="c-sidebar-wrapper col-auto col-md-3 col-xl-2 px-sm-2 px-0 p-lg-3 pt-lg-0">
+          <!-- sidebar -->
+          <div class="c-sidebar-wrapper col-auto px-sm-2 px-0 p-lg-3 pt-lg-0">
             <!-- navigation -->
             <nav class="c-sidebar d-flex flex-column align-items-center align-items-sm-start px-3 py-3 h-100 rounded-2">
               <p class="mb-3 px-3 py-2 w-100 text-uppercase fw-bold">Меню</p>
@@ -207,8 +208,898 @@
             </nav>
             <!-- End navigation -->
           </div>
+          <!-- end sidebar -->
 
-          <div class="col py-3">Content area...</div>
+          <!-- content -->
+          <div class="col">
+            <div class="table-container">
+              <div class="row">
+                <div class="col">Search</div>
+
+                <!-- add button -->
+                <div class="col">
+                  <button type="button" class="c-btn btn-table border-0">Добавить запись</button>
+                </div>
+                <!-- end add button -->
+              </div>
+            </div>
+
+            <div class="table-container mt-4 mb-3">
+              <div class="table-wrapper">
+                <div class="table-body p-3">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <table class="el-table table table-hover overflow-hidden w-100">
+                        <thead>
+                          <tr>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">id</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Раздел</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Автор</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Дата публикации</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Заголовок новости</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Просмотров</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Статус</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Показывать</div>
+                            </th>
+                            <th>
+                              <div class="el-cell px-2 text-center py-1">Редактировать</div>
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">1</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Новости компаний</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Анастасія Крупка</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">10 Июня 2021 10:58</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">Пристрасть у стосунках: міф чи реальність</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">896</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">наверх</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">да</div>
+                            </td>
+                            <td>
+                              <div class="el-cell px-2 text-center py-1">
+                                <a href="/">Delete</a>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <!-- pagination -->
+                      <div class="clearfix">
+                        <div class="hint-text">Showing <b>3</b> out of <b>25</b> entries</div>
+                        <ul class="pagination">
+                          <li class="page-item disabled">
+                            <a href="#">Previous</a>
+                          </li>
+                          <li class="page-item">
+                            <a href="#" class="page-link">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                          </li>
+                          <li class="page-item active">
+                            <a href="#" class="page-link">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a href="#" class="page-link">4</a>
+                          </li>
+                          <li class="page-item">
+                            <a href="#" class="page-link">5</a>
+                          </li>
+                          <li class="page-item">
+                            <a href="#" class="page-link">Next</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- end pagination -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end content -->
         </div>
       </div>
     </main>

@@ -1,0 +1,33 @@
+$table-fs: 0.8rem;
+
+$r-2: 0.2rem;
+
+/* Table */
+.table-container {
+  max-width: 99%;
+}
+
+.table-wrapper {
+  min-width: 1000px;
+  width: 100%;
+  background-color: $white;
+  box-shadow: $light-shadow;
+  border-radius: $r-2;
+}
+
+.el-table {
+  position: relative;
+  max-width: 100%;
+  font-size: $table-fs;
+}
+
+.el-cell {
+  color: $text;
+}
+
+.btn-table {
+  font-size: $table-fs;
+  padding: 0.8rem 1rem !important;
+  font-weight: 400 !important;
+  margin-left: auto;
+}
