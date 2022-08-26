@@ -15,9 +15,27 @@ $r-2: 0.2rem;
   border-radius: $r-2;
 }
 
+td {
+  vertical-align: middle;
+}
+
+thead,
+tbody,
+tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+tbody {
+  display: block;
+  overflow: auto;
+}
+
 .el-table {
   position: relative;
   max-width: 100%;
+  overflow: hidden;
   font-size: $table-fs;
 }
 

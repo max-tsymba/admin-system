@@ -1,21 +1,20 @@
-$sidebar-fs: 0.8rem;
+$fs-12: 0.8rem;
 
 /* Sidebar */
 .c-sidebar-wrapper {
   min-height: calc(100vh - 88px);
-  min-width: 300px;
 }
 
 .c-sidebar {
   background-image: $main-gradient !important;
   box-shadow: $dark-shadow !important;
   color: $white !important;
-  font-size: $sidebar-fs !important;
+  font-size: $fs-12 !important;
 
   a,
   button {
     color: $white !important;
-    font-size: $sidebar-fs !important;
+    font-size: $fs-12 !important;
     font-weight: 500;
     transition: all 0.3s !important;
   }
