@@ -1,8 +1,30 @@
 $fs-12: 0.8rem;
+$sidebar-width: 260px;
+$sidebar-width-sm: 220px;
 
 /* Sidebar */
 .c-sidebar-wrapper {
   min-height: calc(100vh - 88px);
+  min-width: 320px;
+  transition: all 0.3s;
+
+  @include breakpoint($laptops) {
+    position: absolute;
+    top: 0;
+    right: auto;
+    height: 100vh;
+    min-width: $sidebar-width;
+    padding: 0 !important;
+
+    .c-sidebar {
+      border-radius: 0 !important;
+      padding: 0.5rem !important;
+    }
+  }
+
+  @include breakpoint($small) {
+    min-width: $sidebar-width-sm;
+  }
 }
 
 .c-sidebar {
@@ -10,6 +32,7 @@ $fs-12: 0.8rem;
   box-shadow: $dark-shadow !important;
   color: $white !important;
   font-size: $fs-12 !important;
+  overflow: hidden;
 
   a,
   button {
@@ -19,8 +42,17 @@ $fs-12: 0.8rem;
     transition: all 0.3s !important;
   }
 
-  .accordion-button::after {
-    background-image: url('../../img/icons/chevron.png');
+  .accordion-button {
+    &::after {
+      background-image: url('../../img/icons/chevron.png');
+      transform: rotate(0deg);
+    }
+  }
+
+  .accordion-button.collapsed {
+    &::after {
+      transform: rotate(180deg) !important;
+    }
   }
 }
 
@@ -34,5 +66,18 @@ $fs-12: 0.8rem;
 .accordion-header {
   &:hover {
     background-color: rgba($white, 0.2) !important;
+  }
+}
+
+// js
+.js-sidebar {
+  @include breakpoint($laptops) {
+    left: -100%;
+  }
+}
+
+.js-sidebar.active {
+  @include breakpoint($laptops) {
+    left: 0;
   }
 }

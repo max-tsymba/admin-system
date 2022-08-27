@@ -1,4 +1,6 @@
 $dropdown-width: 200px;
+$sidebar-width: 260px;
+$sidebar-width-sm: 205px;
 
 $fs-13: 0.85rem;
 
@@ -40,5 +42,31 @@ $fs-13: 0.85rem;
 
   &:hover {
     color: $text;
+  }
+}
+
+.c-hamburger-btn {
+  display: none;
+
+  @include breakpoint($laptops) {
+    display: block;
+  }
+}
+
+// js
+.js-header {
+  transition: all 0.3s;
+
+  @include breakpoint($laptops) {
+    position: absolute;
+    width: 100% !important;
+  }
+}
+
+.js-header.active {
+  margin-left: $sidebar-width;
+
+  @include breakpoint($small) {
+    margin-left: $sidebar-width-sm;
   }
 }

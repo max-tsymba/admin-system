@@ -1,5 +1,6 @@
 $table-fs: 0.8rem;
-
+$sidebar-width: 285px;
+$sidebar-width-sm: 230px;
 $r-2: 0.2rem;
 
 /* Table */
@@ -48,4 +49,22 @@ tbody {
   padding: 0.8rem 1rem !important;
   font-weight: 400 !important;
   margin-left: auto;
+}
+
+// js
+.js-content {
+  transition: all 0.3s;
+
+  @include breakpoint($laptops) {
+    position: absolute;
+    margin-top: 82px;
+  }
+}
+
+.js-content.active {
+  margin-left: $sidebar-width;
+
+  @include breakpoint($small) {
+    margin-left: $sidebar-width-sm;
+  }
 }
